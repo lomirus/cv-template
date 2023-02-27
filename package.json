@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "preview": "vite & node ./scripts/preview.js",
-    "build": "tsc && vite build"
+    "print": "node ./scripts/print.js"
   },
   "dependencies": {
     "marked": "^4.2.12",
