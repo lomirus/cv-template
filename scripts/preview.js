@@ -1,7 +1,7 @@
 import { watch } from 'node:fs/promises'
 import compile from './compile.js';
 
-let isChanged = false;
+let isChanged = true;
 
 setInterval(() => {
     if (isChanged) {
