@@ -1,16 +1,9 @@
-import { useEffect, useState } from 'react'
+import { info, content } from './_template'
 
 function App() {
-  const [markdown, setMarkdown] = useState('')
-  const [info, setInfo] = useState({})
-
-  useEffect(() => {
-
-  }, [])
-  
   return (
     <div className="App">
-      <div id='markdown'>{markdown}</div>
+      <div id='content'>{content}</div>
     </div>
   )
 }
