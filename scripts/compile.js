@@ -1,7 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises'
 
 export default async function compile() {
-    const content = (await readFile('./template/content.md', 'utf-8'));
+    const content = await readFile('./template/content.md', 'utf-8');
     const info = await readFile('./template/info.json', 'utf-8');
 
     await writeFile(
