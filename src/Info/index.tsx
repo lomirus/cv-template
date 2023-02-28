@@ -1,4 +1,4 @@
-import { marked } from 'marked'
+import { GithubFilled, MailFilled, PhoneFilled } from '@ant-design/icons'
 
 import { info } from '../_template'
 import styles from './index.module.less'
@@ -10,7 +10,7 @@ function App() {
         <div>
           <span>{info.name}</span>
           <div>
-            <img src='' alt='github icon' />
+            <GithubFilled />
             <span>{info.github}</span>
           </div>
         </div>
@@ -25,11 +25,11 @@ function App() {
         <div className={styles.contact}>
           <div>
             <span>{info.email}</span>
-            <img src='' alt='email icon' />
+            <MailFilled />
           </div>
           <div>
             <span>{info.phone}</span>
-            <img src='' alt='phone icon' />
+            <PhoneFilled />
           </div>
         </div>
       </div>
