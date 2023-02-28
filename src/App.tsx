@@ -8,7 +8,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Info />
-      <div id='content' dangerouslySetInnerHTML={{ __html: marked(content) }} />
+      <div className={styles.content} dangerouslySetInnerHTML={{ __html: marked(content) }} />
     </div>
   )
 }
