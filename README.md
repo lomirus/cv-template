@@ -1,5 +1,9 @@
 # CV Template
 
+## Showcase
+
+![](docs/example.png)
+
 ## How to use
 
 1. Install dependencies: `npm install`;
