@@ -16,22 +16,24 @@ async function exists(path) {
     }
 }
 
-console.log('(1/4) Compiling template...')
+console.log('(1/5) Compiling template...')
 await compile();
 
-console.log('(2/4) Creating the server...')
+console.log('(2/5) Creating the server...')
 const server = await createServer({
     server: { port: PORT }
 });
 await server.listen();
 
-console.log('(3/4) Launching the puppeteer...')
+console.log('(3/5) Launching the puppeteer...')
 const browser = await puppeteer.launch();
 const page = await browser.newPage();
-await page.goto(`http://localhost:${PORT}`);
+
+console.log('(4/5) Loading the page...')
+await page.goto(`http://localhost:${PORT}`, { waitUntil: 'networkidle0' });
 await page.emulateMediaType('screen')
 
-console.log('(4/4) Printing PDF file...')
+console.log('(5/5) Printing PDF file...')
 if (!(await exists('target'))) {
     await mkdir('target');
 }
