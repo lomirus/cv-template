@@ -24,12 +24,12 @@ function App() {
         </div>
         <div className={styles.contact}>
           <div>
-            <span>{info.email}</span>
             <MailFilled />
+            <span>{info.email}</span>
           </div>
           <div>
-            <span>{info.phone}</span>
             <PhoneFilled />
+            <span>{info.phone}</span>
           </div>
         </div>
       </div>
