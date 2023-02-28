@@ -14,12 +14,10 @@ async function exists(path) {
     }
 }
 
-const server = await createServer({
-    server: {
-        port: PORT
-    }
-});
 console.log('(1/3) Creating the server...')
+const server = await createServer({
+    server: { port: PORT }
+});
 await server.listen();
 
 console.log('(2/3) Launching the puppeteer...')
