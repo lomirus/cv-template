@@ -7,19 +7,19 @@ function App() {
   return (
     <div className={styles.info}>
       <div className={styles.top}>
-        <div>
-          <span>{info.name}</span>
-          <div>
+        <div className={styles.left}>
+          <span className={styles.name}>{info.name}</span>
+          <a className={styles.github} href={`https://github.com/${info.github}`} target='_blank'>
             <GithubFilled />
-            <span>{info.github}</span>
-          </div>
+            <span className={styles.username}>{info.github}</span>
+          </a>
         </div>
-        <span>{info.job}</span>
+        <span className={styles.job}>{info.job}</span>
       </div>
       <div className={styles.bottom}>
         <div className={styles.tags}>
           {info.tags.map((line, i) => (
-            <span key={i}>{line.join('·')}</span>
+            <span key={i}>{line.join(' · ')}</span>
           ))}
         </div>
         <div className={styles.contact}>

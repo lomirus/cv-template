@@ -2,20 +2,65 @@
     background-color: #4682b4;
     color: #fff;
     width: 100%;
+    box-sizing: border-box;
+    padding: 24px 24px 0 24px;
+
     .top {
         display: flex;
         justify-content: space-between;
+        border-bottom: solid rgba(255, 255, 255, 0.2) 1px;
 
+        .left {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+
+            .name {
+                font-size: 40px;
+            }
+
+            .github {
+                display: flex;
+                font-size: 24px;
+                align-items: center;
+                vertical-align: bottom;
+                height: 24px;
+                color: #fff;
+                text-decoration: none;
+                column-gap: 4px;
+                .username {
+                    transform: translateY(4px);
+                }
+            }
+        }
+
+        .job {
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
     }
+
     .bottom {
         display: flex;
         justify-content: space-between;
+        margin-top: 6px;
+        padding: 16px 0 28px 0;
+
         .tags {
             display: flex;
             flex-direction: column;
         }
+
         .contact {
-            
+            display: flex;
+            flex-direction: column;
+            row-gap: 4px;
+
+            div {
+                display: flex;
+                column-gap: 6px;
+            }
         }
     }
 }
