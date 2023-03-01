@@ -34,6 +34,21 @@
                 width: 1em;
                 margin-left: -1em;
             }
+
+            li {
+                // Q: Why is there a <p> element?
+                // A: The bug/feature of the `marked`. Usually there is no <p> element.
+                //    To reproduce, insert the markdown code below:
+                //
+                // ```markdown
+                // - example
+                // 
+                // - example
+                // ```
+                p {
+                    display: inline;
+                }
+            }
         }
 
         img {
