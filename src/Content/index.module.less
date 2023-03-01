@@ -1,0 +1,56 @@
+.content {
+    columns: 2;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #4a4a4a;
+
+    h2 {
+        border-left: #4682b4 solid 5px;
+        padding-left: 8px;
+        background-color: #f0f5f9;
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: #4682b4;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0 18px;
+
+        li::before {
+            // Magic Number: 2023 is the CSS Code/unicode for a triangle bullet
+            // Not means A.D. 2023 :p
+            content: "\2023";
+            color: #4682b4;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        li {
+
+            // Q: Why is there a <p> element?
+            // A: The bug/feature of the `marked`. Usually there is no <p> element.
+            //    To reproduce, insert the markdown code below:
+            //
+            // ```markdown
+            // - example
+            // 
+            // - example
+            // ```
+            p {
+                display: inline;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+}

@@ -1,14 +1,12 @@
-import { marked } from 'marked'
-
-import { content } from './_template'
 import styles from './App.module.less'
 import Info from './Info'
+import Content from './Content'
 
 function App() {
   return (
     <div className={styles.App}>
       <Info />
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: marked(content) }} />
+      <Content />
     </div>
   )
 }
