@@ -3,7 +3,7 @@ import { GithubFilled, MailFilled, PhoneFilled } from '@ant-design/icons'
 import { info } from '../_template'
 import styles from './index.module.less'
 
-function App() {
+function Info() {
   return (
     <div className={styles.info}>
       <div className={styles.top}>
@@ -42,4 +42,4 @@ function App() {
   )
 }
 
-export default App
+export default Info
