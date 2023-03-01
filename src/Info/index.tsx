@@ -9,10 +9,15 @@ function App() {
       <div className={styles.top}>
         <div className={styles.left}>
           <span className={styles.name}>{info.name}</span>
-          <a className={styles.github} href={`https://github.com/${info.github}`} target='_blank'>
-            <GithubFilled />
-            <span className={styles.username}>{info.github}</span>
-          </a>
+          {info.github ? (
+            <a
+              className={styles.github}
+              href={`https://github.com/${info.github}`} target='_blank'
+            >
+              <GithubFilled />
+              <span className={styles.username}>{info.github}</span>
+            </a>
+          ) : null}
         </div>
         <span className={styles.job}>{info.job}</span>
       </div>
