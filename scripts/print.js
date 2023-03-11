@@ -21,7 +21,7 @@ await compile();
 
 console.log('(2/5) Creating the server...')
 const server = await createServer({
-    server: { port: PORT }
+    server: { port: PORT, strictPort: true }
 });
 await server.listen();
 
