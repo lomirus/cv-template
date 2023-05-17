@@ -12,10 +12,10 @@ function Info() {
           {info.github ? (
             <a
               className={styles.github}
-              href={`https://github.com/${info.github}`} target='_blank'
+              href={info.github.startsWith('https://github.com/') ? info.github : `https://github.com/${info.github}.com`}  target='_blank'
             >
               <GithubFilled />
-              <span className={styles.username}>{info.github}</span>
+              <span className={styles.username}>{info.github.startsWith('https://github.com/') ? info.github : `https://github.com/${info.github}.com`}</span>
             </a>
           ) : null}
         </div>
