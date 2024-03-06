@@ -2,14 +2,34 @@
 
 ## Showcase
 
-![](docs/example.png)
+![](docs/example.jpg)
 
-## How to use
+## Usage
 
-1. Install dependencies: `npm install`;
-1. Run `npm run preview` to see the initial rendering;
-2. Edit `/template/info.jsonc` and `/template/content.md`, watching the changes until you get what you want;
-3. Run `npm run print` to output the PDF file to `/target/cv.pdf`. 
+### Setup
+
+Install dependencies:
+
+```command
+npm install
+```
+
+### Edit & Preview
+
+Launch the service:
+
+```command
+npm run preview
+```
+
+Then edit `/template/info.jsonc` and `/template/content.md`, watching the changes until you get what you want.
+
+
+### Print
+```command
+npm run print
+```
+The output PDF file will be located at `/target/cv.pdf`. 
 
 ## Features
 
