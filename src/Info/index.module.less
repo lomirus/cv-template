@@ -4,60 +4,72 @@
     width: 100%;
     box-sizing: border-box;
     padding: 24px 24px 0 24px;
+    display: flex;
+    column-gap: 18px;
+    flex-direction: row;
 
-    .top {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: solid rgba(255, 255, 255, 0.2) 1px;
-
-        .left {
-            display: flex;
-            align-items: center;
-            column-gap: 12px;
-
-            .name {
-                font-size: 40px;
-            }
-
-            .github {
-                display: flex;
-                font-size: 24px;
-                align-items: center;
-                vertical-align: bottom;
-                height: 24px;
-                color: #fff;
-                text-decoration: none;
-                column-gap: 4px;
-            }
-        }
-
-        .job {
-            font-size: 28px;
-            display: flex;
-            align-items: center;
+    .avatar {
+        img {
+            border-radius: 12px;
         }
     }
 
-    .bottom {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 6px;
-        padding: 16px 0 28px 0;
-
-        .tags {
+    .info_right {
+        width: 100%;
+        .top {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
+            border-bottom: solid rgba(255, 255, 255, 0.2) 1px;
+
+            .left {
+                display: flex;
+                align-items: center;
+                column-gap: 12px;
+
+                .name {
+                    font-size: 40px;
+                }
+
+                .github {
+                    display: flex;
+                    font-size: 24px;
+                    align-items: center;
+                    vertical-align: bottom;
+                    height: 24px;
+                    color: #fff;
+                    text-decoration: none;
+                    column-gap: 4px;
+                }
+            }
+
+            .job {
+                font-size: 28px;
+                display: flex;
+                align-items: center;
+            }
         }
 
-        .contact {
+        .bottom {
             display: flex;
-            flex-direction: column;
-            row-gap: 4px;
-            align-items: start;
+            justify-content: space-between;
+            margin-top: 6px;
+            padding: 16px 0 28px 0;
 
-            div {
+            .tags {
                 display: flex;
-                column-gap: 8px;
+                flex-direction: column;
+            }
+
+            .contact {
+                display: flex;
+                flex-direction: column;
+                row-gap: 4px;
+                align-items: start;
+
+                div {
+                    display: flex;
+                    column-gap: 8px;
+                }
             }
         }
     }
