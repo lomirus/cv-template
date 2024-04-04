@@ -2,15 +2,13 @@ import { GithubFilled, MailFilled, PhoneFilled } from "@ant-design/icons";
 
 import { info } from "../_template";
 import styles from "./index.module.less";
-import avatar from "../assets/avatar.jpg";
-
-const ENABLE_AVATAR = false;
+import { USE_AVATAR, avatar } from "../assets/avatar";
 
 function Info() {
   return (
     <header>
       <div className={styles.info}>
-        {ENABLE_AVATAR ? (
+        {USE_AVATAR ? (
           <div className={styles.avatar}>
             <img src={avatar} width={120}></img>
           </div>

@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 ## Customized
+src/assets/*
 src/_template.ts
 target/

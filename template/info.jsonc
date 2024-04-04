@@ -1,6 +1,8 @@
 {
     "name": "张三",
-    // Note: If `github` is null or be commented, it'll be skipped when rendering.
+    // Note: If `avatar` is null or empty, it'll be automatically skipped when rendering.
+    "avatar": "avatar.jpg",
+    // Note: If `github` is null or empty, it'll be automatically skipped when rendering.
     "github": "RedrockTeam",
     "job": "全栈开发工程师",
     "email": "example@gmail.com",
