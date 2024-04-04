@@ -2,7 +2,9 @@
 
 ## Showcase
 
-![](docs/example.jpg)
+| Showcase Without Avatar                                     | Showcase With Avatar                                  |
+| ----------------------------------------------------------- | ----------------------------------------------------- |
+| ![showcase without avatar](docs/example-without-avatar.jpg) | ![showcase with avatar](docs/example-with-avatar.jpg) |
 
 ## Usage
 
