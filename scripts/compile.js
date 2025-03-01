@@ -8,7 +8,7 @@ export default async function compile() {
     try {
         await access('./src/assets')
     } catch {
-        mkdir('./src/assets')
+        await mkdir('./src/assets')
     }
 
     const avatar = JSON.parse(info.replace(/\/\/.*/g, '')).avatar;
